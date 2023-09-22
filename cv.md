@@ -18,3 +18,16 @@ After working for 4 years as engineer I realized my passion in programming so I 
 - JS
 - Git
 - GitHub
+
+### Code example
+
+```js
+function sum(a, b) {
+  return a + b;
+}
+```
+
+### Languages
+
+- English B2
+- Russian
