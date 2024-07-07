@@ -37,9 +37,11 @@ body {
   justify-content: flex-end;
   align-items: center;
   list-style: none;
+  text-align: center;
 }
 
-.nav-link {
+.nav-link,
+.contacts-link {
   padding: 0 15px;
   line-height: 50px;
   transition: 0.3s;
@@ -47,7 +49,8 @@ body {
   color: black;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.contacts-link:hover {
   color: rgb(47, 206, 255);
   text-decoration: underline;
 }
@@ -139,5 +142,32 @@ code {
   .section-profile {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (max-width: 565px) {
+  pre code {
+    padding: 10px;
+    font-size: 12px;
+  }
+  .nav-link {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+  .main-container {
+    padding: 0 15px;
+  }
+  ul {
+    padding-inline-start: 15px;
+  }
+  .nav-list {
+    justify-content: center;
+    padding-inline-start: 0;
+  }
+}
+
+@media (max-width: 565px) {
+  .nav-link-contacts {
+    display: none;
   }
 }
