@@ -164,9 +164,6 @@ code {
     justify-content: center;
     padding-inline-start: 0;
   }
-}
-
-@media (max-width: 565px) {
   .nav-link-contacts {
     display: none;
   }
