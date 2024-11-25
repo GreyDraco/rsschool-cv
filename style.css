@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 25px;
+}
+
+.section {
+  width: 50%;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+
+.nav-link,
+.contacts-link {
+  padding: 0 15px;
+  line-height: 50px;
+  transition: 0.3s;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link:hover,
+.contacts-link:hover {
+  color: rgb(47, 206, 255);
+  text-decoration: underline;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: rgb(0, 130, 170);
+}
+
+.section-profile {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  border-bottom: solid 20px rgb(0, 130, 170);
+  padding: 20px;
+}
+
+.section-profile-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+pre {
+  display: block;
+  font-family: monospace;
+  unicode-bidi: isolate;
+  white-space: pre;
+}
+
+pre code {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  padding: 20px;
+}
+
+code {
+  display: flex;
+  align-items: start;
+  text-align: start;
+  justify-content: left;
+}
+
+.footer,
+.header {
+  color: rgb(24, 24, 51);
+  background-color: rgb(0, 146, 191);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.footer-rss-logo {
+  width: 120px;
+  height: 50px;
+}
+
+.footer-rss-logo:hover {
+  outline: solid black 1px;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-profile {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 565px) {
+  pre code {
+    padding: 10px;
+    font-size: 12px;
+  }
+  .nav-link {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+  .main-container {
+    padding: 0 15px;
+  }
+  ul {
+    padding-inline-start: 15px;
+  }
+  .nav-list {
+    justify-content: center;
+    padding-inline-start: 0;
+  }
+  .nav-link-contacts {
+    display: none;
+  }
+}
