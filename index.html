@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="assets/favicon.ico" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
     <title>cv</title>
   </head>
   <body>
@@ -27,7 +27,7 @@
     <main class="main">
       <div class="container main-container">
         <section class="section section-profile" id="profile">
-          <img src="./assets/avatar.png" alt="profile-logo" />
+          <img src="./assets/avatar.png" alt="profile-logo">
           <div class="section-profile-title">
             <h1 class="section-profile-name">Alexandr Oreshkov</h1>
             <h3 class="section-title">Junior Front-End Developer</h3>
@@ -36,10 +36,10 @@
         <section class="section section-contacts" id="contacts">
           <h3 class="section-title">Contacts</h3>
           <ul class="section-list">
-            <li>Location:<a href="https://maps.app.goo.gl/FkJycaX146CgjdQu7" class="contacts-link">Moscow, Russia</a></li>
-            <li>Email:<a href="mailto:greydracoplay@gmail.com" class="contacts-link">greydracoplay@gmail.com</a></li>
-            <li>Discord:<a href="https://discordapp.com/users/grey_draco/" class="contacts-link">grey_draco</a></li>
-            <li>Github:<a href="https://github.com/GreyDraco" class="contacts-link">GreyDraco</a></li>
+            <li>Location: <a href="https://maps.app.goo.gl/FkJycaX146CgjdQu7" class="contacts-link">Moscow, Russia</a></li>
+            <li>Email: <a href="mailto:greydracoplay@gmail.com" class="contacts-link">greydracoplay@gmail.com</a></li>
+            <li>Discord: <a href="https://discordapp.com/users/grey_draco/" class="contacts-link">grey_draco</a></li>
+            <li>Github: <a href="https://github.com/GreyDraco" class="contacts-link">GreyDraco</a></li>
           </ul>
         </section>
         <section class="section section-summary" id="summary">
@@ -48,7 +48,7 @@
         </section>
         <section class="section section-skills" id="skills">
           <h3 class="section-title">Skills</h3>
-          <ul>
+          <ul class="section-list">
             <li>C++</li>
             <li>Python</li>
             <li>HTML5</li>
@@ -61,15 +61,17 @@
         <section class="section section-code" id="code">
           <h3 class="section-title">Code Example</h3>
           <pre>
-            <code>"function swapHeadAndTail(arr) {
+            <code>
+function swapHeadAndTail(arr) {
   const sliceNum = Math.floor(arr.length / 2);
   const newArr = [];
   return newArr.concat(
-  arr.slice(-sliceNum),
-  arr.slice(sliceNum, -sliceNum),
-  arr.slice(0, sliceNum)
- );
-}"</code>
+    arr.slice(-sliceNum),
+    arr.slice(sliceNum, -sliceNum),
+    arr.slice(0, sliceNum)
+  );
+}
+            </code>
           </pre>
         </section>
         <section class="section section-education" id="education">
@@ -91,7 +93,7 @@
           <li><p>© 2024</p></li>
           <li><a href="https://github.com/GreyDraco" class="contacts-link">grey_draco</a></li>
         </ul>
-        <a href="https://rs.school/courses/javascript-ru" class="footer-rss-logo"></a>
+        <a href="https://rs.school/courses/javascript-ru" class="footer-rss-logo"><img src="assets/rs-school-logo.svg" alt="rss-logo"></a>
       </div>
     </footer>
   </body>
